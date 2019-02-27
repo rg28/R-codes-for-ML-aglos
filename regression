@@ -1,0 +1,6 @@
+#Linear model
+# Train the model using the training sets and check score
+linear <- lm(y ~ ., data = train_data)
+summary(linear)
+#Predict Output
+predicted= predict(linear,test_data) 
